@@ -19,13 +19,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnFlash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="62dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="62dp"
-        android:text="Button"
+        android:text="Flash"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCamara" />
@@ -40,5 +40,5 @@
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFlash" />
 </androidx.constraintlayout.widget.ConstraintLayout>
