@@ -18,6 +18,7 @@ public class VibradorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_vibrador);
 
         botonvibrador = findViewById(R.id.btnvibrar);
+        botonvibrador.setForeground(getResources().getDrawable(R.drawable.vibrar));
 
         botonvibrador.setOnClickListener(new View.OnClickListener() {
             @Override
