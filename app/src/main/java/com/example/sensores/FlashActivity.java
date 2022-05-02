@@ -22,6 +22,7 @@ public class FlashActivity extends AppCompatActivity {
 
         switchFlash = findViewById(R.id.switchFlash);
         cameraManager = (CameraManager) getSystemService(CAMERA_SERVICE);
+        switchFlash.setForeground(getResources().getDrawable(R.drawable.flashoff));
 
         if (getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH)) {
             switchFlash.setEnabled(true);
@@ -38,14 +39,14 @@ public class FlashActivity extends AppCompatActivity {
                     } catch (CameraAccessException e) {
                         e.printStackTrace();
                     }
-                    switchFlash.setText("Encender");
+                    switchFlash.setForeground(getResources().getDrawable(R.drawable.flashoff));
                 } else {
                     try {
                         cameraManager.setTorchMode("0", true);
                     } catch (CameraAccessException e) {
                         e.printStackTrace();
                     }
-                    switchFlash.setText("Apagar");
+                    switchFlash.setForeground(getResources().getDrawable(R.drawable.flashon));
                 }
             }
         });
